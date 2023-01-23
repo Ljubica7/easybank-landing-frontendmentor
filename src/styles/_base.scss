@@ -1,0 +1,142 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Public Sans", sans-serif;
+  display: none;
+}
+
+*,
+::after,
+::before,
+body {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  height: 100%;
+  width: 100vw;
+  font-size: calc(100vw / 1920 * 16);
+
+  @media screen and (max-width: 768px) {
+    font-size: calc(100vw / 768 * 16);
+  }
+}
+
+main {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100vw;
+}
+
+//normalize
+b,
+strong {
+  font-weight: bolder;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+a {
+  text-decoration: none;
+  margin: 0;
+  font-style: normal;
+}
+
+// vars
+$publicSans: "Public Sans", sans-serif;
+
+// colors
+$primary-100: hsl(233, 26%, 24%);
+
+$accent-100: hsl(136, 65%, 51%);
+$accent-200: hsl(160, 37%, 64%);
+
+$accent-900: hsl(192, 70%, 51%);
+
+$neutral-100: hsl(0, 0%, 100%);
+$neutral-200: hsl(0, 0%, 98%);
+$neutral-300: hsl(220, 16%, 96%);
+$neutral-400: hsl(233, 8%, 62%);
+
+$neutral-900: hsl(0, 0%, 0%);
+
+$linear-gradient-100: linear-gradient(
+  90deg,
+  rgba(49, 211, 92, 1) 0%,
+  rgba(43, 183, 218, 1) 100%
+);
+// background: rgb(49,211,92);

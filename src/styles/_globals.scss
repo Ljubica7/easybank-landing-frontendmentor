@@ -1,0 +1,74 @@
+// TYPOGRAPHY
+%heading-1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 300;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+%heading-2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 300;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+%heading-3 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 300;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+%heading-4 {
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 400;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+
+//PARAGRAPHS
+%paragraph-1 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+%paragraph-2 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $neutral-100;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+%paragraph-3 {
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: $neutral-400;
+  @include for-tabletS {
+    font-size: 14px;
+  }
+}
+
+// BUTTONS
+.btn {
+  @extend %paragraph-2;
+  background: rgb(49, 211, 92);
+  background: $linear-gradient-100;
+  padding: 0.8rem 2rem;
+  border-radius: 32px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
+}

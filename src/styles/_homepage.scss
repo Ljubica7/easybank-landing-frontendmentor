@@ -1,0 +1,156 @@
+.hero-homepage {
+  position: relative;
+  padding-left: 10.63rem;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+  background: $neutral-200;
+
+  .content-block {
+    max-width: 28em;
+
+    h1 {
+      @extend %heading-1;
+      color: $primary-100;
+    }
+    p {
+      @extend %paragraph-1;
+      color: $neutral-400;
+      padding-block: 3rem;
+    }
+  }
+
+  .img-block {
+    .background-illustration {
+      position: absolute;
+      top: -24vh;
+      right: -17vw;
+      z-index: -1;
+      width: 80vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .front-illustration {
+      width: 46.7rem;
+      height: 57.2rem;
+      margin-top: -3rem;
+      margin-right: -7.8rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.why-block {
+  position: relative;
+  padding: 8rem 10.63rem;
+  height: auto;
+  z-index: 0;
+  background: $neutral-300;
+
+  h2 {
+    @extend %heading-2;
+    color: $primary-100;
+  }
+  p {
+    max-width: 38em;
+    @extend %paragraph-1;
+    color: $neutral-400;
+    padding-block: 3rem 5rem;
+  }
+
+  .cards-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.7rem;
+
+    .card-content {
+      .card-img {
+        height: 4.5rem;
+        width: 4.5rem;
+        aspect-ratio: 1;
+      }
+
+      h3 {
+        @extend %heading-3;
+        color: $primary-100;
+        padding-top: 2rem;
+      }
+      p {
+        padding-top: 2rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.latest-articles-block {
+  position: relative;
+  padding: 8rem 10.63rem;
+  height: auto;
+  z-index: 0;
+  background: $neutral-200;
+
+  h2 {
+    @extend %heading-2;
+    color: $primary-100;
+    padding-bottom: 4rem;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    .article-block {
+      background: $neutral-100;
+      border-radius: 8px;
+
+      .article-img {
+        height: 17.2rem;
+        width: 22.9rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .article-body {
+        padding: 2rem;
+        max-width: 20.5em;
+        p {
+          @extend %paragraph-2;
+          font-weight: 400;
+          color: $neutral-400;
+        }
+        .article-author {
+          @extend %paragraph-3;
+        }
+        h3 {
+          @extend %heading-4;
+          color: $primary-100;
+          padding-block: 1rem;
+          transition: 0.3s;
+
+          &:hover {
+            color: $accent-200;
+          }
+        }
+      }
+    }
+  }
+}
