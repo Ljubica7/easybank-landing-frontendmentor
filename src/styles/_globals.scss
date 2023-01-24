@@ -4,7 +4,7 @@
   line-height: 1.2;
   font-weight: 300;
   @include for-tabletS {
-    font-size: 14px;
+    font-size: 34px;
   }
 }
 %heading-2 {
@@ -12,7 +12,7 @@
   line-height: 1.2;
   font-weight: 300;
   @include for-tabletS {
-    font-size: 14px;
+    font-size: 30px;
   }
 }
 %heading-3 {
@@ -20,7 +20,7 @@
   line-height: 1.2;
   font-weight: 300;
   @include for-tabletS {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 %heading-4 {
@@ -28,7 +28,7 @@
   line-height: 1.1;
   font-weight: 400;
   @include for-tabletS {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -55,9 +55,6 @@
   line-height: 1.4;
   font-weight: 400;
   color: $neutral-400;
-  @include for-tabletS {
-    font-size: 14px;
-  }
 }
 
 // BUTTONS
@@ -70,5 +67,9 @@
   transition: 0.3s;
   &:hover {
     opacity: 0.5;
+  }
+
+  @include for-tablet {
+    padding: 12px 20px;
   }
 }
