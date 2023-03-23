@@ -1,12 +1,11 @@
 .hero-homepage {
   position: relative;
   padding-left: 10.63rem;
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 0;
   background: $neutral-200;
 
   @include for-tablet {
@@ -46,55 +45,56 @@
     }
   }
 
-  .img-block {
-    .background-illustration {
-      position: absolute;
-      top: -24vh;
-      right: -17vw;
-      z-index: -1;
-      width: 80vw;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      @include for-laptopL {
-        width: 88vw;
-        top: -22vh;
-        right: -20vw;
-      }
-      @include for-tablet {
-        width: 160vw;
-        top: -20vh;
-        right: -55vw;
-      }
-
-      @include for-phoneL {
-        top: -6vh;
-        right: -60vw;
-      }
+  .background-illustration {
+    position: absolute;
+    top: -13rem;
+    right: -17vw;
+    z-index: 0;
+    width: 80vw;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .front-illustration {
-      width: 46.7rem;
-      height: 57.2rem;
-      margin-top: -3rem;
-      margin-right: -7.8rem;
+    @include for-laptopL {
+      width: 88vw;
+      top: -22vh;
+      right: -20vw;
+    }
+    @include for-tablet {
+      width: 160vw;
+      top: -20vh;
+      right: -55vw;
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    @include for-phoneL {
+      top: -6vh;
+      right: -60vw;
+    }
+  }
 
-      @include for-tablet {
-        width: 100%;
-        margin-right: 0;
-        margin-top: -10rem;
-      }
-      @include for-phoneL {
-        margin-top: -5rem;
-      }
+  .front-illustration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46.7rem;
+    height: 57.2rem;
+    z-index: 3;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include for-tablet {
+      position: relative;
+      width: 100%;
+      margin-right: 0;
+      margin-top: -10rem;
+    }
+    @include for-phoneL {
+      margin-top: -5rem;
     }
   }
 }
@@ -103,7 +103,7 @@
   position: relative;
   padding: 8rem 10.63rem;
   height: auto;
-  z-index: 0;
+  z-index: 2;
   background: $neutral-300;
 
   @include for-tablet {
